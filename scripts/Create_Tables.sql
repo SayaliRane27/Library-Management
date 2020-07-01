@@ -1,5 +1,4 @@
-/* Project : Sample Library Management System */
-/* Script  : Create Tables */
+/* Creates tables and inserts data for all the tables expect issue & return statuses*/
 
 DROP TABLE Return_Status CASCADE;
 DROP TABLE Issue_Status CASCADE;
