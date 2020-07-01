@@ -1,3 +1,6 @@
+/* Function to search books on given string.
+   String compared with book title, author and category. */
+   
 CREATE OR REPLACE FUNCTION SearchBooks(str varchar)
 RETURNS TABLE (bookID int, BookTitle varchar, Author varchar, Category varchar)
 AS $$
@@ -13,5 +16,5 @@ BEGIN
 		bk_title ILIKE '%'||str||'%' OR a_name ILIKE '%'||str||'%' OR c_name ILIKE '%'||str||'%';
 END $$ LANGUAGE plpgsql;
 
-
-SELECT * FROM SearchBooks ('Fiction')
+/*Calling search book function */
+--SELECT * FROM SearchBooks ('Fiction')

@@ -1,3 +1,7 @@
+/* Procedure to return the book issued by the user.
+   Checks done for if the book is issued and if it's already returned.
+   Late fee calculated for records where the issue period expired. */
+   
 CREATE OR REPLACE PROCEDURE ReturnBook(iid int)
 LANGUAGE plpgsql
 AS $$
@@ -46,4 +50,5 @@ BEGIN
 	END IF;
 END $$;
 
-call ReturnBook(4)
+/* Calling the return book function with issue id */
+--CALL ReturnBook(4)

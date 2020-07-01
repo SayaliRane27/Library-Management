@@ -1,3 +1,5 @@
+/* Function to check user's email and password in the database and return the borrower ID */
+
 CREATE OR REPLACE FUNCTION GetBorrowID (email varchar, pass varchar)
 RETURNS int
 AS $$
@@ -11,6 +13,3 @@ EXCEPTION
 		RAISE EXCEPTION 'Invalid email or password';
 	RETURN NULL;
 END $$ LANGUAGE plpgsql;
-
-
-select GetBorrowID ('lane@gmail.com', 'laneJ')

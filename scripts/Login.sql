@@ -1,3 +1,5 @@
+/* Procedure to authenticate the user by verifying the email and password */
+
 CREATE OR REPLACE PROCEDURE Login(email varchar, pass varchar)
 LANGUAGE plpgsql
 AS $$
@@ -24,5 +26,5 @@ BEGIN
 	CLOSE c1;
 END $$;
 
-CALL login ('ware@gmail.com', 'wareR')
-CALL login ('wae@gmail.com', 'wreR')
+/* Calling login function */
+--CALL login ('ware@gmail.com', 'wareR')

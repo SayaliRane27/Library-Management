@@ -1,4 +1,4 @@
-/* Creates tables and inserts data for all the tables expect issue & return statuses*/
+/* Script to create all the tables and insert data for the tables */
 
 DROP TABLE Return_Status CASCADE;
 DROP TABLE Issue_Status CASCADE;
@@ -128,7 +128,9 @@ INSERT INTO Borrower_Info VALUES (DEFAULT,'Nancy','Chris','8775188648','chris@gm
 INSERT INTO Borrower_Info VALUES (DEFAULT,'Terry','Roy','5823271995','roy@gmail.com','royT','Active',0);
 INSERT INTO Borrower_Info VALUES (DEFAULT,'Tina','Wells','3199109161','wells@gmail.com','wellsT','Active',0);
 INSERT INTO Borrower_Info VALUES (DEFAULT,'Phil','Pope','9934812349','pope@gmail.com','popeP','Active',0);
-	 
+
+/* Procedure written to insert data in below tables on issuing or returning a book */
+
 CREATE TABLE Issue_Status
 	(i_id serial,
 	 br_id int,
