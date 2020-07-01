@@ -1,3 +1,7 @@
+/* Procedure to issue book for the user by inserting record in the Issue_Status table after authenticating the user.
+   Book ID given for the book to be issued. 
+   Checks done for is the book is available and not currently issued by user. */
+
 CREATE OR REPLACE PROCEDURE IssueBook (bid int, email varchar, pass varchar)
 LANGUAGE plpgsql
 AS $$
@@ -25,9 +29,5 @@ BEGIN
 	END IF;
 END $$;
 
-
-CALL IssueBook (3,'lane@gmail.com','laneJ')
-select * from issue_status
-select * from book_info
-select * from avail_copies
-select * from borrower_info
+/* Calling the function to issue book */ 
+--CALL IssueBook (1,'lane@gmail.com','laneJ')
