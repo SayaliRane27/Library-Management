@@ -1,19 +1,21 @@
 # Library Management System
 Database management functions simulating requirements of library management system.
 
-### Basic Features:
+#### Basic Features:
 1. Issue Book
 2. Return Book
 3. Search Books
 4. Add New User
 
-### Entity-Relationship Diagram:
+#### Entity-Relationship Diagram:
 The diagram shows the tables present in the database and their relationship with each other along with the *primary key* and *foreign key* in each table.
 
+<kbd>
 <img width="638" alt="eerd" src="https://user-images.githubusercontent.com/67709215/86399391-308d8d00-bc75-11ea-96ea-849ff0e7909f.PNG">
+</kbd>
 
 
-### SQL Files:
+#### SQL Files:
 ```
 1. Create_Tables.sql      <-- Creating all the tables from the above diagram and populating data in the tables
 
